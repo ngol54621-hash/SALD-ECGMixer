@@ -1,6 +1,6 @@
 # Structure-Aware Latent Diffusion for Multi-Label ECG Synthesis with Synthetic Knowledge Transfer for Enhanced Classification
 
-**Submitted to Information Fusion.**
+**Submitted to Information Fusion.** (The code is still being refined...)
 
 PyTorch implementation of structure-aware latent diffusion for multi-label ECG synthesis, ECGMixer classification, and synthetic knowledge transfer.
 
