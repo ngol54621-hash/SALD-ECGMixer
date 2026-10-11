@@ -4,7 +4,7 @@
 
 **Notes:** Trained model weights, generated data, and evaluation result files will all be made available upon acceptance of the paper.
 
-PyTorch implementation of structure-aware latent diffusion for multi-label ECG synthesis, ECGMixer classification, and synthetic knowledge transfer.
+Official PyTorch implementation of SALDM and ECGMixer for conditional multi-label ECG generation and classification.
 
 ![Model architecture](assets/architecture.png)
 
