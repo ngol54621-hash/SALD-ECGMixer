@@ -44,6 +44,12 @@ python src/scripts/generate_dataset.py \
 
 Defaults: **PTB-XL, 71 labels, CFG 1.5**. For CPSC2018 or SPH, add `--config src/configs/mcspnet_cpsc2018.yaml` or `--config src/configs/mcspnet_sph.yaml` to each command. Generation saves eight leads; the standalone conversion utility is `src/scripts/utils/leads.py`. Weights are not bundled.
 
+## Visualization
+
+Representative 12-lead, 10-second normal (NORM) ECGs: a real test sample (left) and a SALDM-ECG-generated sample (right).
+
+![Real and generated 12-lead ECG waveforms](assets/generated_ecg_waveforms.png)
+
 ## Evaluation
 
 Download `hubert_ecg.py`, `config.json` and `model.safetensors` from [HuBERT-ECG Base](https://huggingface.co/Edoardo-Coppola/hubert-ecg-base), then set `eval.hubert_model_dir` in the dataset configuration.
