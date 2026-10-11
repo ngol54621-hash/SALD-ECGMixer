@@ -2,6 +2,8 @@
 
 **Submitted to Information Fusion.** (The code is still being refined, but all core functionality is already in place.)
 
+**Notes:** Trained model weights, generated data, and evaluation result files will all be made available upon acceptance of the paper.
+
 PyTorch implementation of structure-aware latent diffusion for multi-label ECG synthesis, ECGMixer classification, and synthetic knowledge transfer.
 
 ![Model architecture](assets/architecture.png)
