@@ -1,4 +1,4 @@
-# SALDM-ECG and ECGMixer
+# Structure-Aware Latent Diffusion for Multi-Label ECG Synthesis with Synthetic Knowledge Transfer for Enhanced Classification
 
 **Submitted to Information Fusion.**
 
