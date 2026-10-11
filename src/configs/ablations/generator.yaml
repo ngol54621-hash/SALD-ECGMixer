@@ -1,0 +1,21 @@
+base_config: src/configs/mcspnet_ptbxl.yaml
+output_root: outputs/ablations/generation
+variants:
+- full
+- without_mscm
+- without_sspm
+- without_frequency
+- without_bimamba2
+- without_period_fold
+- self_attention_dit
+guidance_scales:
+- 1.0
+- 1.5
+- 2.0
+- 2.5
+standard_dit:
+  dim: 256
+  depth: 6
+  heads: 8
+  mlp_ratio: 4.0
+  dropout: 0.0

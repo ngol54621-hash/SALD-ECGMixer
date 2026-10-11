@@ -1,0 +1,45 @@
+seeds:
+- 24
+- 42
+- 96
+- 2026
+- 2027
+output_root: outputs/classification
+training:
+  epochs: 120
+  batch_size: 64
+  lr: 0.0003
+  weight_decay: 0.01
+  drop: 0.1
+  drop_path_rate: 0.1
+  grad_clip: 1.0
+  early_stop_patience: 6
+  lr_patience: 5
+  min_lr: 1.0e-06
+  num_workers: 4
+  amp: true
+  amp_dtype: bfloat16
+  device: cuda:0
+  deterministic: true
+  selection_metric: AUC
+knowledge_transfer:
+  weight: 0.1
+  temperature: 1.0
+datasets:
+  ptbxl:
+    root: data/PTBXL_SSSD_official_fs100
+    array_prefix: ptbxl
+    label_spaces:
+    - label_all
+    - label_diag
+    - label_diag_superclass
+  cpsc2018:
+    root: data/CPSC2018_SSSD_official_fs100
+    array_prefix: cpsc
+    label_spaces:
+    - label_all
+  sph:
+    root: data/SPH_SSSD_official_labels44_patient_fs100
+    array_prefix: sph
+    label_spaces:
+    - label_primary

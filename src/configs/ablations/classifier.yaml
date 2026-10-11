@@ -1,0 +1,29 @@
+base_config: src/configs/ecgmixer.yaml
+output_root: outputs/ablations/classification
+dataset: ptbxl
+label_space: label_all
+variants:
+  local_encoder: src.models.ablations.ecgmixer:LocalEncoder
+  rhythm_encoder: src.models.ablations.ecgmixer:RhythmEncoder
+  lead_attention: src.models.ablations.ecgmixer:LeadAttention
+  additive_fusion: src.models.ablations.ecgmixer:AdditiveFusion
+  full: src.models.ecgmixer:ECGMixer
+learning_rates:
+- 0.00005
+- 0.0001
+- 0.0003
+- 0.001
+- 0.003
+batch_sizes:
+- 16
+- 32
+- 64
+- 128
+- 256
+distillation_weights:
+- 0.1
+- 0.3
+- 0.5
+temperatures:
+- 1.0
+- 2.0
