@@ -1,6 +1,6 @@
 # Structure-Aware Latent Diffusion for Multi-Label ECG Synthesis with Synthetic Knowledge Transfer for Enhanced Classification
 
-**Submitted to Information Fusion.** (The code is still being refined, but all core functionality is already in place.)
+(The code is still being refined, but all core functionality is already in place.)
 
 **Notes:** Trained model weights, generated data, and evaluation result files will all be made available upon acceptance of the paper.
 
